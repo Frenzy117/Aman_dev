@@ -1,0 +1,153 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.experience-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    animation: fade-in 0.7s;
+    margin: 30px;
+}
+
+.experience-title
+{
+    font-size: 5vh;
+}
+
+.professional-container
+{
+    animation: none;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.accordion
+{
+    margin: 2.5%;
+    width: 40%;
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255,255,255,0));
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.accordion-header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-head
+{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.basic
+{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.position, .company, .tenure
+{
+    margin: 0.5%;
+}
+
+.position
+{
+    font-weight: 500;
+    color: #D9381E;
+    width: max-content;
+}
+
+.company
+{
+    font-size: small;
+}
+
+.tenure
+{
+    font-size: 0.75em;
+}
+
+.company-logo-div
+{
+    width: 10%;
+}
+.company-logo
+{
+    width: 100%;
+}
+
+.square-logo
+{
+    border-radius: 50%;
+    padding: 1%;
+}
+
+.tech-stack
+{
+    padding: 1%;
+    width: 100%;
+    justify-content:flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-logo
+{
+    padding: 0.25%;
+    margin: 1%;
+    width: 2.375em;
+    height: 2.375em;
+    object-fit: contain;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: white;
+}
+
+.summary
+{
+    list-style-type:disc;
+    font-size: small;
+    list-style-position: outside;
+    padding-left: 2%;
+}
+
+.accordion-content
+{
+    padding: 2%;
+}
+
+li
+{
+    margin: 1%;
+}

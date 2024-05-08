@@ -1,0 +1,38 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+.nav-bar
+{
+  color: white;
+  background-color: #008080;
+  height: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.Dashboard {
+    height: max-content;
+  }  
+
+button
+{
+    height:max-content;
+    border: none;
+    background-color: inherit;
+
+}
+
+.Tools
+{
+  color: white;
+  justify-content: space-evenly;
+}

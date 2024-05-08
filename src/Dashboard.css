@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    background-color: #e8e8e8;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .Dashboard {
+      height: max-content;
+    }  
+
+
+    
+  

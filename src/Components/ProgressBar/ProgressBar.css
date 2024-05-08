@@ -1,0 +1,26 @@
+.parentDiv
+{
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255,255,255,0));
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content:flex-start;
+    vertical-align: middle;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.childDiv
+{
+    background: linear-gradient(135deg,rgba(38, 70, 83, 1),rgba(38, 70, 83,0.9));
+    color: rgb(38, 70, 83);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 15px;
+}
