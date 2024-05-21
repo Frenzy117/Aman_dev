@@ -6,6 +6,7 @@
     right: 5%;
     position: fixed;
     width: max-content;
+    padding: 0.25vh;
     object-fit: cover;
     box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);

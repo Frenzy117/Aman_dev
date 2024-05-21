@@ -4,9 +4,18 @@ import './DarkMode.css';
 
 const DarkMode = () =>
 {
+    const handleDarkMode = (e) =>
+    {
+        document.body.classList.toggle("dark-theme");
+        console.log("Enabled");
+    }   
     return (
-        <div className='dark-button'>
+        <div className='dark-button-container'>
+            <button 
+            onClick={handleDarkMode}
+            className='dark-button'>
             <Brightness7Icon className='brightness-icon'/>
+            </button>
         </div>
     );
 }

@@ -8,6 +8,7 @@
     }
 }
 
+
 .experience-container
 {
     display: flex;
@@ -16,29 +17,22 @@
     justify-content: center;
     box-sizing: border-box;
     animation: fade-in 0.7s;
-    margin: 30px;
 }
 
-.experience-title
-{
-    font-size: 5vh;
-}
 
 .professional-container
 {
-    animation: none;
-    margin: 0;
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: max-content;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    padding: 2vh;
 }
 
 .accordion
 {
-    margin: 2.5%;
+    margin-top: 1.25%;
+    margin-bottom: 1.25%;
     width: 40%;
     box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -78,7 +72,7 @@
 
 .position, .company, .tenure
 {
-    margin: 0.5%;
+    margin: 0.2vh;
 }
 
 .position
@@ -95,7 +89,7 @@
 
 .tenure
 {
-    font-size: 0.75em;
+    font-size: 1.5vh;
 }
 
 .company-logo-div
@@ -117,6 +111,7 @@
 {
     padding: 1%;
     width: 100%;
+    overflow: scroll;
     justify-content:flex-start;
     display: flex;
     flex-direction: row;
@@ -124,14 +119,26 @@
 
 .tech-logo
 {
+    transition: 0.2s;
     padding: 0.25%;
-    margin: 1%;
-    width: 2.375em;
-    height: 2.375em;
+    margin: 0.5vh;
+    width: 5vh;
+    height: 5vh;
     object-fit: contain;
     border: 1px solid white;
     border-radius: 50%;
     background: white;
+}
+
+.tech-logo:hover
+{
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+.sub-tech-logo
+{
+    width: 2em;
+    height: 2em;
 }
 
 .summary
@@ -150,4 +157,299 @@
 li
 {
     margin: 1%;
+}
+
+.project-wrapper
+{
+    background: transparent;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container
+{
+    background:transparent;
+    text-align: center;
+}
+
+.projects
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-title
+{
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.project-tech-stack
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background: transparent;
+    justify-content:flex-start;
+    overflow: scroll;
+}
+.project-description
+{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    font-size: inherit;
+}
+.trailer
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.trailer-img
+{
+    width: inherit;
+}
+.tooltips
+{
+    background: inherit;
+}
+
+.stack-div
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: transparent;
+    display: flex;
+}
+
+.github-link
+{
+    background: transparent;
+    border: none;
+}
+.gitlogo
+{
+    background: none;
+    border: none;
+    color: white;
+}
+.linklogo
+{
+    cursor: pointer;
+    color: black;
+}
+
+.bento-grid
+{
+    padding: 20px;
+    display: flex;
+    width: 70%;
+    height: max-content;
+    overflow: hidden;
+    gap: 1em;
+}
+.house-div, .listening-div, .glasses-div, .svm-div, .portfolio-div, .column1
+{
+    border-radius: 2.5em;
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255,255,255,0));
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.col
+{
+    height: 100%;
+    border-radius: 2em;
+    display: flex;
+}
+
+.column1
+{
+    justify-content: center;
+    align-items: center;
+    flex: 1;   
+}
+
+.video-overlay
+{
+    opacity: 0.8;
+}
+.column2
+{
+    gap: 1em;
+    flex-direction: column;
+    flex: 2;
+}
+.row1, .row3
+{
+    gap: 1em;
+    display: flex;
+    flex: 1;
+}
+
+.portfolio-div
+{
+    position: relative;
+    height: 100%;
+    flex: 2;    
+}
+
+.svm-div
+{
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+
+.row
+{
+    width: 100%;
+    border-radius: 2.5em;
+}
+
+.row2
+{
+    flex: 1;
+}
+.glasses-div .bento-img
+{
+    width: 100%;
+}
+
+.house-div
+{
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+
+.listening-div
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 2;   
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(217, 56, 30, 0.9);
+    overflow: scroll;
+    width: 100%;
+    height: 0%;
+    transition: 0.3s ease;
+}
+.overlay-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
+    padding: 1.25em;
+    background: transparent;
+    color: white;
+    font-size: small;
+}
+
+.portfolio-div:hover .overlay, .svm-div:hover .overlay, .house-div:hover .overlay, .glasses-div:hover .overlay, .column1:hover .overlay, .listening-div:hover .overlay
+{
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.project
+{
+    transition: 0.2s;
+}
+
+.project:hover
+{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.big-title-header
+{
+    background: inherit;
+    font-size: large;
+}
+
+@media screen and (max-width: 1432px) {
+
+    .accordion
+    {
+        min-width: 100%;
+    }
+
+    .bento-grid, .row
+    {
+        padding: 0;
+        min-width: 100%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .house-div, .listening-div, .glasses-div, .svm-div, .portfolio-div, .column1
+    {
+        border-radius: 1.5em;
+    }
+    .big-title-header
+    {
+        font-size: 20px;
+    }
+    .column1 .overlay
+    {
+        max-height: 80%;
+        transition: 0.2s ease;
+        border-radius: inherit;
+    }
+    .project-title
+    {
+
+    }
+    .overlay-text ul
+    {
+        font-size: 13px;
+    }
+    .stack-div h1
+    {
+        font-size: 7px;
+    }
+    .tooltips
+    {
+        display: flex;
+        max-width: 50%;
+    }
+    .linklogo
+    {
+        font-size: xx-small;
+    }
 }

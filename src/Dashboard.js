@@ -7,14 +7,14 @@ import Home from "./Components/Home/Home";
 import Experience from "./Components/Experience/Experience";
 import Contact from "./Components/Contact/Contact";
 import About from "./Components/About/About";
-import DarkMode from "./Components/DarkMode/DarkMode";
+// import DarkMode from "./Components/DarkMode/DarkMode";
 
 
 function Dashboard() {
   return (
     <div className="Dashboard">
       <NavBar/>
-      <DarkMode/>
+      {/* <DarkMode/> */}
       <Router>
           <Routes>
             <Route path="/" Component={Home}/>

@@ -10,9 +10,68 @@ import Python from '../../assets/python.svg';
 import Excel from '../../assets/Excel.png';
 import RutgersLogo from '../../assets/Rutgers_logo.png';
 import GLogicLogo from '../../assets/GLogic.jpeg';
+import appLogo from '../../assets/AppScreen.png';
+import CppLogo from '../../assets/Cpp.png';
+import DartLogo from '../../assets/DartLogo.png';
+import FlutterLogo from '../../assets/FlutterLogo.webp';
+import Trailer from '../../assets/Trailer.mp4';
+import gitHubLogo from '../../assets/github-mark.svg';
+import PortfolioImg from '../../assets/PortfolioSnip.png';
+import SVMImg from '../../assets/DvC.png';
+import Pandas from '../../assets/Pandas.png';
+import Numpy from '../../assets/Numpy.png';
+import Scikit from '../../assets/Scikit.png';
+import House from '../../assets/House.png';
+import LinkIcon from '@mui/icons-material/Link';
+import Tooltip from '@mui/joy/Tooltip';
+import Listening from '../../assets/Listening.png';
+import Glasses from '../../assets/GlassImg.png';
+import KiCad from '../../assets/KiCad.png';
+import Uvicorn from '../../assets/uvicorn.png';
+import Maps from '../../assets/Maps.png';
+import { React, useEffect} from 'react';
 
 function Experience ()
 {
+    const playVideoOnHover = () =>
+    {
+        const videoContainer = document.querySelector('.column1');
+        const video = document.querySelector('.trailer');
+        if ('ontouchstart' in window || navigator.maxTouchPoints) 
+            {
+            videoContainer.addEventListener('touchstart', function () 
+            {
+                if (video.paused) 
+                {
+                    video.play();
+                } 
+                else 
+                {
+                    video.pause();
+                }
+            }
+        );
+    } 
+        else 
+        {
+            videoContainer.addEventListener('mouseenter', function () 
+            {
+                video.play();
+            }
+        );
+
+            videoContainer.addEventListener('mouseleave', function () 
+            {
+                video.pause();
+                video.currentTime = 0;
+            }
+        );
+        }
+    } 
+    useEffect(
+        playVideoOnHover,[]
+    );
+    
     return (
         <div className="experience-container">
             <div className='title-container red-color'>
@@ -41,14 +100,37 @@ function Experience ()
                             </div>
                         </div>
                         <div className='tech-stack'>
-                            <img className='tech-logo' src={ReactImg} alt='tech-stack-logo'/>
-                            <img className='tech-logo' src={Node} alt='tech-stack-logo'/>
-                            <img className='tech-logo' src={JS} alt='tech-stack-logo'/>
-                            <img className='tech-logo' src={HTML} alt='tech-stack-logo'/>
-                            <img className='tech-logo' src={CSS} alt='tech-stack-logo'/>
-                            <img className='tech-logo' src={Python} alt='tech-stack-logo'/>
-                            <img className='tech-logo' src={Django} alt='tech-stack-logo'/>
-                            <img className='tech-logo' src={Postgre} alt='tech-stack-logo'/>
+                            <Tooltip title="ReactJS" variant='soft' size="sm">
+                                <img className='tech-logo' src={ReactImg} alt='tech-stack-logo'/>
+                            </Tooltip>
+
+                            <Tooltip title='NodeJS' variant='soft' size="sm">
+                                <img className='tech-logo' src={Node} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            
+                            <Tooltip title='Javascript' variant='soft' size="sm">
+                                <img className='tech-logo' src={JS} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            
+                            <Tooltip title='HTML' variant='soft' size="sm">
+                                <img className='tech-logo' src={HTML} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            
+                            <Tooltip title='CSS' variant='soft' size="sm">
+                                <img className='tech-logo' src={CSS} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            
+                            <Tooltip title='Python' variant='soft' size="sm">
+                                <img className='tech-logo' src={Python} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            
+                            <Tooltip title='Django' variant='soft' size="sm">
+                                <img className='tech-logo' src={Django} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            
+                            <Tooltip title='PostgreSQL' variant='soft' size="sm">
+                                <img className='tech-logo' src={Postgre} alt='tech-stack-logo'/>
+                            </Tooltip>
                         </div>
                     </div>
                         <div className='accordion-content'>
@@ -78,21 +160,340 @@ function Experience ()
                             </div>
                         </div>
                         <div className='tech-stack'>
-                            <img className='tech-logo' src={Excel} alt='tech-stack-logo'/>
+                            <Tooltip title='Microsoft Excel' variant='soft' size="sm">
+                                <img className='tech-logo' src={Excel} alt='tech-stack-logo'/>
+                            </Tooltip>
                         </div>
                     </div>
                         <div className='accordion-content'>
                             <ul className="summary">
                                 <li>Conducted research on member organizations and their involvement with the firm.</li>
                                 <li>Designed a rubric and a scoring system using Microsoft Excel to rate/ score the interaction between the firm and its members. </li>
-                                <li>Organized meeting sessions and built objectives for a collective and motivating work environment for the team. </li>
-                                <li>Promptly responded to requirements and planned changes to existing developments in collaboration with the team.</li>
+                                <li>Organized meeting sessions and built objectives for a motivating work environment. </li>
+                                <li>Promptly responded to requirements and planned changes with the team.</li>
                             </ul>
+                    </div>
+                </div>
+            </div>
+            <div className='project-wrapper'>
+                <div className='title-container red-color'>
+                    <h1 className='page-title'>
+                        Projects
+                    </h1>
+                </div>
+                <div className='projects'>
+                <div className='bento-grid'>
+                        <div className='column1 col project'>
+                            <video className="trailer" controls poster={appLogo}>
+                                <source src={Trailer} type="video/mp4"/>
+                            </video>
+                            <div className='overlay video-overlay'>
+                                        <div className='overlay-text'>
+                                            <div className='project-title'>
+                                                <h1 className="big-title-header">
+                                                    R-INSIGHT Mobile App Companion 
+                                                </h1>
+                                                <Tooltip title='Github' variant='soft' size="sm">
+                                                    <a rel="noreferrer" className='github-link' href='https://github.com/Frenzy117/RINSIGHT/tree/main/rinsight_companion_app' target='_blank'>
+                                                        <img className='tech-logo sub-tech-logo gitlogo' src={gitHubLogo} alt='tech-stack-logo'/>
+                                                    </a>
+                                                </Tooltip>
+                                            </div>
+                                            <ul style={{background:'inherit'}}>
+                                                <li style={{marginLeft: '0', background:'inherit'}}>
+                                                    Control and Access your R-INSIGHT glasses through the iOS & Android App
+                                                </li>
+                                                <li style={{marginLeft: '0', background:'inherit'}}>
+                                                    Simple Translation | Transcription | Navigation & Text-To-Speech UI
+                                                </li>
+                                            </ul>
+                                            <div className='stack-div'>
+                                                <h1 className="tech-stack-header" style={{background:'transparent', color:'white', fontSize:'small'}}>
+                                                    Tech Stack:
+                                                </h1>
+                                                <div className='project-tech-stack'>
+                                                    <Tooltip title='Python' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Python} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Dart' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={DartLogo} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Flutter' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={FlutterLogo} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                    <Tooltip title='Google Maps' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Maps} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div className='column2 col'>
+                            <div className='row1 row'>
+                                <div className='portfolio-div project'>
+                                    <img className="trailer-img" src={PortfolioImg} alt='thumbnail'/>
+                                    <div className='overlay'>
+                                        <div className='overlay-text'>
+                                            <div className='project-title'>
+                                                <h1 className="big-title-header" >
+                                                    Personal Portfolio 
+                                                </h1>
+                                                <div className='tooltips'>
+                                                    <Tooltip title='Github' variant='soft' size="sm">
+                                                        <a className='github-link' href='https://github.com/Frenzy117/Aman_dev' target='_blank'  rel="noreferrer">
+                                                            <img className='tech-logo sub-tech-logo gitlogo' src={gitHubLogo} alt='tech-stack-logo'/>
+                                                        </a>
+                                                    </Tooltip>
+                                                    <Tooltip title='Link' variant='soft' size="sm">
+                                                        <LinkIcon className='tech-logo sub-tech-logo gitlogo linklogo' color='dark' >
+                                                            {/* <a className='github-link' href={Home} target='_blank' ref="noreferrer"/> */}
+                                                        </LinkIcon>
+                                                    </Tooltip>
+                                                </div>
+                                            </div>
+                                            <ul style={{background:'inherit'}}>
+                                                <li style={{marginLeft: '0', background:'inherit'}}>
+                                                    Get to know my skills, interests, and experience!
+                                                </li>
+                                                <li style={{marginLeft: '0', background:'inherit'}}>
+                                                    Reach out to me about any opportunities!
+                                                </li>
+                                            </ul>
+                                            <div className='stack-div'>
+                                                <h1 className="tech-stack-header" style={{background:'transparent', color:'white', fontSize:'small'}}>
+                                                    Tech Stack:
+                                                </h1>
+                                                <div className='project-tech-stack'>
+                                                    <Tooltip title='ReactJS' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={ReactImg} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='HTML' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={HTML} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Javascript' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={JS} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                    
+                                                    <Tooltip title='CSS' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={CSS} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='NodeJS' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Node} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='svm-div project'>
+                                    <img className="trailer-img" src={SVMImg} alt='thumbnail'/>
+                                    <div className='overlay'>
+                                        <div className='overlay-text'>
+                                            <div className='project-title'>
+                                                <h1 className="big-title-header">
+                                                    Image Classification Model
+                                                </h1>
+                                                <Tooltip title='Github' variant='soft' size="sm">
+                                                    <a className='github-link' href='https://github.com/Frenzy117/Binary-Image-Classifier' target='_blank'  rel="noreferrer">
+                                                        <img className='tech-logo sub-tech-logo gitlogo' src={gitHubLogo} alt='tech-stack-logo'/>
+                                                    </a>
+                                                </Tooltip>
+                                            </div>
+                                            <ul style={{background:'inherit'}}>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'smaller'}}>
+                                                    Support Vector Machine based model
+                                                </li>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'smaller'}}>
+                                                    K Fold Cross Validation | Tested Regularization
+                                                </li>
+                                            </ul>
+                                            <div className='stack-div'>
+                                                <h1 className="tech-stack-header" style={{background:'transparent', color:'white', fontSize:'smaller'}}>
+                                                    Tech Stack:
+                                                </h1>
+                                                <div className='project-tech-stack'>
+                                                    <Tooltip title='Python' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Python} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Pandas' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Pandas} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Numpy' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Numpy} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Scikit-Learn' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Scikit} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='row2 row'>
+                                <div className='glasses-div project'>
+                                    <img className="trailer-img bento-img" src={Glasses} alt='thumbnail'/>
+                                    <div className='overlay'>
+                                        <div className='overlay-text'>
+                                            <div className='project-title'>
+                                                <h1 className="big-title-header">
+                                                    R-INSIGHT
+                                                </h1>
+                                                <Tooltip title='Github' variant='soft' size="sm">
+                                                    <a className='github-link' href='https://github.com/aezrapour/RINSIGHT' target='_blank'  rel="noreferrer">
+                                                        <img className='tech-logo sub-tech-logo gitlogo' src={gitHubLogo} alt='tech-stack-logo'/>
+                                                    </a>
+                                                </Tooltip>
+                                            </div>
+                                            <ul style={{background:'inherit'}}>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'small'}}>
+                                                    Smart Glasses for those hard of hearing
+                                                </li>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'small'}}>
+                                                    Lightning Fast Real-Time Transcription | Translation | Text-To-Speech | Google Maps Navigation on Display
+                                                </li>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'small'}}>
+                                                    Mobile App Companion for both iOS & Android
+                                                </li>
+                                            </ul>
+                                            <div className='stack-div'>
+                                                <h1 className="tech-stack-header" style={{background:'transparent', color:'white', fontSize:'small'}}>
+                                                    Tech Stack:
+                                                </h1>
+                                                <div className='project-tech-stack'>
+                                                    <Tooltip title='C++' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={CppLogo} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                    <Tooltip title='KiCad' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={KiCad} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                    <Tooltip title='Uvicorn' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Uvicorn} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='row3 row'>
+                                <div className='house-div project'>
+                                    <img className="trailer-img" src={House} alt='thumbnail'/>
+                                    <div className='overlay'>
+                                        <div className='overlay-text'>
+                                            <div className='project-title'>
+                                                <h1 className="big-title-header">
+                                                    House Price Prediction Model
+                                                </h1>
+                                                <Tooltip title='Github' variant='soft' size="sm">
+                                                    <a className='github-link' href='https://github.com/Frenzy117/House-Price-Prediction' target='_blank'  rel="noreferrer">
+                                                        <img className='tech-logo sub-tech-logo gitlogo' src={gitHubLogo} alt='tech-stack-logo'/>
+                                                    </a>
+                                                </Tooltip>
+                                            </div>
+                                            <ul style={{background:'inherit'}}>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'smaller'}}>
+                                                    Uses Linear Regression & Ridge Regression
+                                                </li>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'smaller'}}>
+                                                    R2 score of 0.7 on both models
+                                                </li>
+                                            </ul>
+                                            <div className='stack-div'>
+                                                <h1 className="tech-stack-header" style={{background:'transparent', color:'white', fontSize:'smaller'}}>
+                                                    Tech Stack:
+                                                </h1>
+                                                <div className='project-tech-stack'>
+                                                    <Tooltip title='Python' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Python} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Pandas' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Pandas} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Numpy' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Numpy} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Scikit-Learn' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Scikit} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='listening-div project'>
+                                    <img className="trailer-img" src={Listening} alt='thumbnail'/>
+                                    <div className='overlay'>
+                                        <div className='overlay-text'>
+                                            <div className='project-title'>
+                                                <h1 className="big-title-header" style={{background:'inherit', fontSize:'large'}}>
+                                                    RU Listening
+                                                </h1>
+                                                <Tooltip title='Github' variant='soft' size="sm">
+                                                    <a className='github-link' href='https://github.com/Frenzy117/RU-Listening' target='_blank'  rel="noreferrer">
+                                                        <img className='tech-logo sub-tech-logo gitlogo' src={gitHubLogo} alt='tech-stack-logo'/>
+                                                    </a>
+                                                </Tooltip>
+                                            </div>
+                                            <ul style={{background:'inherit'}}>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'small'}}>
+                                                    Audiobook Streaming Web Application
+                                                </li>
+                                                <li style={{marginLeft: '0', background:'inherit', fontSize:'small'}}>
+                                                    Listen, Wish for, Review & Rate your favorite audiobook out of 100s of genres
+                                                </li>
+                                            </ul>
+                                            <div className='stack-div'>
+                                                <h1 className="tech-stack-header" style={{background:'transparent', color:'white', fontSize:'small'}}>
+                                                    Tech Stack:
+                                                </h1>
+                                                <div className='project-tech-stack'>
+                                                    <Tooltip title='HTML' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={HTML} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='Javascript' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={JS} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                    
+                                                    <Tooltip title='CSS' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={CSS} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+
+                                                    <Tooltip title='NodeJS' variant='soft' size="sm">
+                                                        <img className='tech-logo sub-tech-logo' src={Node} alt='tech-stack-logo'/>
+                                                    </Tooltip>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-
+/*
+R-INSIGHT (Glasses)
+R-INSIGHT Mobile App
+Personal Portfolio
+DvC Classifier
+House Price Prediction Model
+RU-Listening
+*/
 export default Experience;

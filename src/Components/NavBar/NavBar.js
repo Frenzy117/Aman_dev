@@ -8,7 +8,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 function NavBar() {
   return (
-    <Nav variant="pills" defaultActiveKey="/" class="nav_bar" >
+    <Nav variant="pills" defaultActiveKey="/" className="nav_bar" >
       <Nav.Item className="item">
         <Nav.Link className = "link" href="/">
           <HomeIcon style={{backgroundColor: 'white' }}/>
