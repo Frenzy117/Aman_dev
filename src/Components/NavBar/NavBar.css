@@ -25,7 +25,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #fff;
-    width: 40px;
+    width:2.5%;
     border-radius: 30px;
     font: optional;
     text-align: center;
@@ -78,4 +78,54 @@
     position: absolute;
     color: #D9381E;
     background: transparent;
+  }
+
+  @media screen and (max-width: 1432px){
+    .nav_bar
+    {
+      z-index: 2;
+      top: 92.5%;
+      left: 25%;
+      min-width: 50%;
+      max-width: 25%;
+      max-height: 5%;
+      flex-direction: row;
+    }
+    .tooltip
+    {
+      padding: 2%;
+      z-index: -1;
+      border: 1px solid white;
+      border-radius: 20px;
+    }
+    .link
+    {
+      z-index: 1;
+      display: flex;
+    }
+    .link:hover .tooltip
+    {
+      transform: translateY(-3em);
+      transition: 0.1s ease;
+      transition-delay: none;
+      background: transparent;
+      border: none;
+    }
+    .link:active .tooltip
+    {
+      visibility: visible;
+      transform: translateY(-3.75em);
+      transition: none;
+      transition-delay: none;
+      background: white;
+    }
+    .tooltip
+    {
+      z-index: 0;
+      display: block;
+      margin: 0;
+      margin-top: 5px;
+      transition: none;
+      transform:translateY(1px);
+    }
   }

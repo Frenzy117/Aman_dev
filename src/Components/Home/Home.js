@@ -5,6 +5,7 @@ import gitHubLogo from '../../assets/github-mark.svg';
 import linkedInLogo from '../../assets/iconmonstr-linkedin-3.svg';
 import resumeLogo from '../../assets/resLogo.png';
 import Tooltip from '@mui/joy/Tooltip';
+import Resume from '../../assets/Aman-Saxena_05_09_2024.pdf';
 
 function Home()
 {
@@ -17,14 +18,14 @@ function Home()
                 Hi!
               </p>
               <p className="name">
-                <span className="default-color">I am </span><span className="red_color">Aman Saxena.</span>
+                <span className="default-color">I am </span><span className="red-color">Aman Saxena.</span>
               </p>
             </div>
             <div className="summary2">
               <p className ="Summary">
-                A passionate Software Engineer,
+                A passionate <span className="red-color">Software Engineer</span>,
                 <br/>
-                and Computer Engineer.
+                and <span className="red-color">Computer Engineer</span>.
               </p>
             </div>
             <div className="socialsDiv">
@@ -40,7 +41,7 @@ function Home()
                 </a>
               </Tooltip>
               <Tooltip title="Resume" variant="soft" size="sm">
-                <a className="tool" rel ="noreferrer" href="https://docs.google.com/document/d/1xynvQ6QYRyHmFPT-l3sUg1UhL6DeCOYh4ZwSgOegQvc/edit?usp=sharing" target="_blank">
+                <a className="tool" rel ="noreferrer" href={Resume} download={true}>
                   <img className="logoImg resLogo" src={resumeLogo} alt = "resumeLink"/>
                 </a>
               </Tooltip>

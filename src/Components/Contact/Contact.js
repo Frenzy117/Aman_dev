@@ -8,6 +8,8 @@ import gitHubLogo from '../../assets/github-mark.svg';
 import linkedInLogo from '../../assets/iconmonstr-linkedin-3.svg';
 import resumeLogo from '../../assets/resLogo.png';
 import Alert from '@mui/material/Alert';
+import Resume from '../../assets/Aman-Saxena_05_09_2024.pdf';
+import Tooltip from '@mui/joy/Tooltip';
 
 
 
@@ -102,15 +104,23 @@ const Contact = () =>
                         </p>
                     </div>
                     <div className="linksdiv">
-                        <a className="tool" rel ="noreferrer" href = "https://github.com/Frenzy117?tab=repositories" target="_blank">
-                            <img className="contactLogoImg" src={gitHubLogo} alt="gitHubLink"/>
-                        </a>
-                        <a className="tool" rel ="noreferrer" href="https://www.linkedin.com/in/aman-saxena-ba000b212/" target="_blank">
-                            <img className = "contactLogoImg" src={linkedInLogo} alt = "linkedinLink"/>
-                        </a>
-                        <a className="tool" rel ="noreferrer" href="https://www.dropbox.com/scl/fi/7mxmm8ynpqu012blvxw89/Aman-Saxena_02_07_2024.pdf?rlkey=h6gy9wwgsrzjbb7r0gn64x3a9&dl=0" target="_blank">
-                            <img className="contactLogoImg" src={resumeLogo} alt = "resumeLink"/>
-                        </a>
+                        <Tooltip title="My Github" variant="soft" size="sm">
+                            <a className="tool" rel ="noreferrer" href = "https://github.com/Frenzy117?tab=repositories" target="_blank">
+                                <img className="contactLogoImg" src={gitHubLogo} alt="gitHubLink"/>
+                            </a>
+                        </Tooltip>
+                        
+                        <Tooltip title="My LinkedIn" variant="soft" size="sm">
+                            <a className="tool" rel ="noreferrer" href="https://www.linkedin.com/in/aman-saxena-ba000b212/" target="_blank">
+                                <img className = "contactLogoImg" src={linkedInLogo} alt = "linkedinLink"/>
+                            </a>
+                        </Tooltip>
+
+                        <Tooltip title="Resume" variant="soft" size="sm">
+                                <a className="tool" rel ="noreferrer" href={Resume} download={true}>
+                                    <img className="contactLogoImg" src={resumeLogo} alt = "resumeLink"/>
+                                </a>
+                        </Tooltip>
                     </div>
                 </div>
                 <form className="message" onSubmit={handleSubmit}>

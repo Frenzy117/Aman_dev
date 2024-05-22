@@ -248,9 +248,9 @@ function Experience ()
                                                         </a>
                                                     </Tooltip>
                                                     <Tooltip title='Link' variant='soft' size="sm">
-                                                        <LinkIcon className='tech-logo sub-tech-logo gitlogo linklogo' color='dark' >
-                                                            {/* <a className='github-link' href={Home} target='_blank' ref="noreferrer"/> */}
-                                                        </LinkIcon>
+                                                        <a className='github-link' href='https://aman-dev-13a2b.web.app' target='_blank' rel="noreferrer">
+                                                            <LinkIcon className='tech-logo sub-tech-logo gitlogo linklogo' color='dark'/>
+                                                        </a>
                                                     </Tooltip>
                                                 </div>
                                             </div>

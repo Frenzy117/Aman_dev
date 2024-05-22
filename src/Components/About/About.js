@@ -3,7 +3,7 @@ import './About.css';
 import RutgersLogo from '../../assets/Rutgers_logo.png';
 import UdemyLogo from '../../assets/Udemy.png';
 import LinkedInLogo from '../../assets/iconmonstr-linkedin-3.svg';
-import { Progress } from "antd";
+import { ConfigProvider, Progress } from "antd";
 
 const About = () =>
 {
@@ -53,9 +53,6 @@ const About = () =>
                             </li>
                             <li className="detail">
                                 Dean's List (2020-2023)
-                            </li>
-                            <li className="detail">
-                                Graduated with High Honors (Magna Cum Laude)
                             </li>
                         </ul>
                     </div>
@@ -122,14 +119,34 @@ const About = () =>
                             <div className="carousel">
                                 <div className="slider">
                                     <section className="slide">
-                                        <Progress className= "Python bar" type="circle" percent={85} format= {()=> 'Python'} size={100} strokeColor={twoColors}/>
-                                        <Progress className= "Java bar" type="circle" percent={60} format= {()=> 'Java' } size={100} strokeColor={twoColors}/>
-                                        <Progress className= "React bar" type="circle" percent={79} format= {()=> 'React' } size={100} strokeColor={twoColors}/>
+                                    <ConfigProvider
+                                        theme={{
+                                            components: {
+                                            Progress: {
+                                                circleTextFontSize: '0.75em'
+                                            },
+                                            },
+                                        }}
+                                        >
+                                            <Progress className= "Python bar" type="circle" percent={85} format= {()=> 'Python'} size={100} strokeColor={twoColors} circle/>
+                                            <Progress className= "Java bar" type="circle" percent={60} format= {()=> 'Java' } size={100} strokeColor={twoColors}/>
+                                            <Progress className= "React bar" type="circle" percent={79} format= {()=> 'React' } size={100} strokeColor={twoColors}/>
+                                        </ConfigProvider>
                                     </section>
                                     <section className="slide">
-                                        <Progress className= "Javascript bar" type="circle" percent={92} format= {()=> 'Javascript'} size={100} strokeColor={twoColors}/>
-                                        <Progress className= "HTML/CSS bar" type="circle"  percent={94} format= {()=> 'HTML/CSS' } size={100} strokeColor={twoColors}/>
-                                        <Progress className= "Dart bar" type="circle" percent={74} format= {()=> 'Dart'} size={100} strokeColor={twoColors}/>
+                                        <ConfigProvider
+                                            theme={{
+                                                components: {
+                                                Progress: {
+                                                    circleTextFontSize: '0.75em'
+                                                },
+                                                },
+                                            }}
+                                        >
+                                            <Progress className= "Javascript bar" type="circle" percent={92} format= {()=> 'Javascript'} size={100} strokeColor={twoColors}/>
+                                            <Progress className= "HTML/CSS bar" type="circle"  percent={94} format= {()=> 'HTML/CSS' } size={100} strokeColor={twoColors}/>
+                                            <Progress className= "Dart bar" type="circle" percent={74} format= {()=> 'Dart'} size={100} strokeColor={twoColors}/>
+                                        </ConfigProvider>
                                     </section>
                                 </div>
                             </div>
@@ -142,14 +159,34 @@ const About = () =>
                             <div className="carousel">
                                 <div className="slider">
                                     <section className="slide">
-                                        <Progress className= "SQL bar" type="circle" percent={72} format= {()=> 'SQL'} size={100} strokeColor={twoColors}/>
-                                        <Progress className= "Django bar" type="circle" percent={80} format= {()=> 'Django'} size={100} strokeColor={twoColors}/>
-                                        <Progress className= "DBeaver bar" type="circle" percent={69} format= {()=> 'DBeaver'} size={100} strokeColor={twoColors}/>
+                                        <ConfigProvider
+                                            theme={{
+                                                components: {
+                                                Progress: {
+                                                    circleTextFontSize: '0.75em'
+                                                },
+                                                },
+                                            }}
+                                        >
+                                            <Progress className= "SQL bar" type="circle" percent={72} format= {()=> 'SQL'} size={100} strokeColor={twoColors}/>
+                                            <Progress className= "Django bar" type="circle" percent={80} format= {()=> 'Django'} size={100} strokeColor={twoColors}/>
+                                            <Progress className= "DBeaver bar" type="circle" percent={69} format= {()=> 'DBeaver'} size={100} strokeColor={twoColors}/>
+                                        </ConfigProvider>
                                     </section>
                                     <section className="slide">
-                                        <Progress className= "GCP bar" type="circle" percent={77} format= {()=> 'GCP'} size={100} strokeColor={twoColors}/>
-                                        <Progress className= "Express bar" type="circle" percent={79} format= {()=> 'Express'} size={100} strokeColor={twoColors}/>
-                                        <Progress className= "Node bar" type="circle" percent={83} format= {()=> 'Node'}  size={100} strokeColor={twoColors}/>
+                                        <ConfigProvider
+                                            theme={{
+                                                components: {
+                                                Progress: {
+                                                    circleTextFontSize: '0.75em'
+                                                },
+                                                },
+                                            }}
+                                        >
+                                            <Progress className= "GCP bar" type="circle" percent={77} format= {()=> 'GCP'} size={100} strokeColor={twoColors}/>
+                                            <Progress className= "Express bar" type="circle" percent={79} format= {()=> 'Express'} size={100} strokeColor={twoColors}/>
+                                            <Progress className= "Node bar" type="circle" percent={83} format= {()=> 'Node'}  size={100} strokeColor={twoColors}/>
+                                        </ConfigProvider>
                                     </section>
                                 </div>
                             </div>
@@ -163,16 +200,34 @@ const About = () =>
                         <div className="carousel">
                             <div className="slider">
                                 <section className="slide">
+                                <ConfigProvider
+                                            theme={{
+                                                components: {
+                                                Progress: {
+                                                    circleTextFontSize: '0.75em'
+                                                },
+                                                },
+                                            }}
+                                        >
                                     <Progress className= "C/C++ bar" type="circle" percent={90} format= {()=> 'C/C++'} size={100} strokeColor={twoColors}/>
                                     <Progress className= "Linux bar" type="circle" percent={83} format= {()=> 'Linux'}  size={100} strokeColor={twoColors}/>
                                     <Progress className= "Verilog bar" type="circle" percent={81} format= {()=> 'Verilog'} size={100} strokeColor={twoColors}/>
-                                    
+                                    </ConfigProvider>
                                 </section>
                                 <section className="slide">
+                                <ConfigProvider
+                                            theme={{
+                                                components: {
+                                                Progress: {
+                                                    circleTextFontSize: '0.75em'
+                                                },
+                                                },
+                                            }}
+                                        >
                                     <Progress className= "MATLAB bar" type="circle" percent={85} format= {()=> 'MATLAB'} size={100} strokeColor={twoColors}/>
                                     <Progress className= "RISC-V bar" type="circle" percent={90} format= {()=> 'RISC-V'} size={100} strokeColor={twoColors}/>
                                     <Progress className= "x86-64 bar" type="circle" percent={77} format= {()=> 'x86-64'} size={100} strokeColor={twoColors}/>
-                                    
+                                    </ConfigProvider>
                                 </section>
                             </div>
                         </div>

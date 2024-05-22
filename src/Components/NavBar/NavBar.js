@@ -11,28 +11,28 @@ function NavBar() {
     <Nav variant="pills" defaultActiveKey="/" className="nav_bar" >
       <Nav.Item className="item">
         <Nav.Link className = "link" href="/">
-          <HomeIcon style={{backgroundColor: 'white' }}/>
+          <HomeIcon style={{backgroundColor: 'white' }} className="nav-icon"/>
           <span className="tooltip">Home</span>
         </Nav.Link>
       </Nav.Item>
 
       <Nav.Item className="item">
         <Nav.Link className = "link" href="/about">
-          <PersonIcon style={{backgroundColor: 'white'}}/>
+          <PersonIcon style={{backgroundColor: 'white'}} className="nav-icon"/>
           <span className="tooltip">About Me</span>
         </Nav.Link>
       </Nav.Item>
 
       <Nav.Item className="item">
         <Nav.Link className = "link" href="/experience">
-          <WorkIcon style={{backgroundColor: 'white'}}/>
+          <WorkIcon style={{backgroundColor: 'white'}} className="nav-icon"/>
           <span className="tooltip">Experience</span>
         </Nav.Link>
       </Nav.Item>
 
       <Nav.Item className="item">
         <Nav.Link className = "link" href="/contact">
-          <ChatIcon style={{backgroundColor: 'white'}}/>  
+          <ChatIcon style={{backgroundColor: 'white'}} className="nav-icon"/>  
           <span className="tooltip">Let's Connect!</span>
         </Nav.Link>
       </Nav.Item>
