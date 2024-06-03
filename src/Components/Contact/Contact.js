@@ -8,7 +8,7 @@ import gitHubLogo from '../../assets/github-mark.svg';
 import linkedInLogo from '../../assets/iconmonstr-linkedin-3.svg';
 import resumeLogo from '../../assets/resLogo.png';
 import Alert from '@mui/material/Alert';
-import Resume from '../../assets/Aman-Saxena_05_09_2024.pdf';
+import Resume from '../../assets/Aman-Saxena_06_03_2024.pdf';
 import Tooltip from '@mui/joy/Tooltip';
 
 

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bc00d89c.css",
-    "main.js": "/static/js/main.a7128aed.js",
+    "main.js": "/static/js/main.61a0a8d2.js",
     "static/js/453.d334ee84.chunk.js": "/static/js/453.d334ee84.chunk.js",
     "static/media/Trailer.mp4": "/static/media/Trailer.863305a3f0002b0d0e0d.mp4",
     "static/media/House.png": "/static/media/House.8392d8aa74f5999904a8.png",
@@ -14,7 +14,7 @@
     "static/media/Numpy.png": "/static/media/Numpy.d44612f79de8c06a0b1a.png",
     "static/media/React.png": "/static/media/React.8a6fc0a24a800d1e0f4a.png",
     "static/media/Scikit.png": "/static/media/Scikit.bfb987221ae5f83d782b.png",
-    "static/media/Aman-Saxena_05_09_2024.pdf": "/static/media/Aman-Saxena_05_09_2024.6519e3389bfc0f5d58a3.pdf",
+    "static/media/Aman-Saxena_06_03_2024.pdf": "/static/media/Aman-Saxena_06_03_2024.0cf8edeff0a2d67ae1b2.pdf",
     "static/media/Udemy.png": "/static/media/Udemy.fc271506aa0d3547ee5d.png",
     "static/media/Cpp.png": "/static/media/Cpp.d8d9a2f879d60721c1ac.png",
     "static/media/Postgre.png": "/static/media/Postgre.eba8cd3a04411be7a155.png",
@@ -36,11 +36,11 @@
     "static/media/iconmonstr-linkedin-3.svg": "/static/media/iconmonstr-linkedin-3.27a3f479ca1bbb0ceef19e395081fb94.svg",
     "static/media/Mail.svg": "/static/media/Mail.a993830408a8604bfac2f7b651d8af0e.svg",
     "main.bc00d89c.css.map": "/static/css/main.bc00d89c.css.map",
-    "main.a7128aed.js.map": "/static/js/main.a7128aed.js.map",
+    "main.61a0a8d2.js.map": "/static/js/main.61a0a8d2.js.map",
     "453.d334ee84.chunk.js.map": "/static/js/453.d334ee84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc00d89c.css",
-    "static/js/main.a7128aed.js"
+    "static/js/main.61a0a8d2.js"
   ]
 }
