@@ -92,7 +92,7 @@ function Experience ()
                                     GLogic
                                 </p>
                                 <p className="tenure">
-                                    May 2023 - Present
+                                    May 2023 - June 2024
                                 </p>
                             </div>
                             <div className="company-logo-div">
@@ -135,9 +135,9 @@ function Experience ()
                     </div>
                         <div className='accordion-content'>
                         <ul className="summary">
-                            <li>Deployed fully functional multi-input forms, lookup tables, and webpages for a business automation platform using React, Node, and Django. </li>
-                            <li>Applied styles and event-driven functionality using HTML, CSS, and Javascript.  Working on the development through Google Cloud Platform and Express JS.</li>
-                            <li>Created new REST APIs using Django alongside formatting user input forms and creating new database schemas through DBeaver and PGAdmin.</li>
+                            <li>Deployed dynamic webpages for a GCP's App Engine based business automation platform serving healthcare clients. Utilized frameworks such as ReactJS, HTML, JS, CSS, and ExpressJS.</li>
+                            <li>Implemented styles and event-driven functionality using libraries such as Material UI ensuring a seamless and responsive user experience. Managed version control and collaboration using Git/Github.</li>
+                            <li>Created new REST APIs, constructed new database schema using PostgreSQL and created data routes, serializers using Django framework.</li>
                         </ul>
                     </div>
                 </div>

@@ -128,9 +128,9 @@ const About = () =>
                                             },
                                         }}
                                         >
-                                            <Progress className= "Python bar" type="circle" percent={85} format= {()=> 'Python'} size={100} strokeColor={twoColors} circle/>
-                                            <Progress className= "Java bar" type="circle" percent={60} format= {()=> 'Java' } size={100} strokeColor={twoColors}/>
-                                            <Progress className= "React bar" type="circle" percent={79} format= {()=> 'React' } size={100} strokeColor={twoColors}/>
+                                            <Progress className= "Tailwind bar" type="circle" percent={75} format= {()=> 'Tailwind'} size={100} strokeColor={twoColors} circle/>
+                                            <Progress className= "Java bar" type="circle" percent={70} format= {()=> 'Java' } size={100} strokeColor={twoColors}/>
+                                            <Progress className= "React bar" type="circle" percent={86} format= {()=> 'React' } size={100} strokeColor={twoColors}/>
                                         </ConfigProvider>
                                     </section>
                                     <section className="slide">
@@ -170,7 +170,7 @@ const About = () =>
                                         >
                                             <Progress className= "SQL bar" type="circle" percent={72} format= {()=> 'SQL'} size={100} strokeColor={twoColors}/>
                                             <Progress className= "Django bar" type="circle" percent={80} format= {()=> 'Django'} size={100} strokeColor={twoColors}/>
-                                            <Progress className= "DBeaver bar" type="circle" percent={69} format= {()=> 'DBeaver'} size={100} strokeColor={twoColors}/>
+                                            <Progress className= "Python bar" type="circle" percent={85} format= {()=> 'Python'} size={100} strokeColor={twoColors} circle/>
                                         </ConfigProvider>
                                     </section>
                                     <section className="slide">
@@ -209,9 +209,9 @@ const About = () =>
                                                 },
                                             }}
                                         >
-                                    <Progress className= "C/C++ bar" type="circle" percent={90} format= {()=> 'C/C++'} size={100} strokeColor={twoColors}/>
-                                    <Progress className= "Linux bar" type="circle" percent={83} format= {()=> 'Linux'}  size={100} strokeColor={twoColors}/>
-                                    <Progress className= "Verilog bar" type="circle" percent={81} format= {()=> 'Verilog'} size={100} strokeColor={twoColors}/>
+                                    <Progress className= "C/C++ bar" type="circle" percent={80} format= {()=> 'C/C++'} size={100} strokeColor={twoColors}/>
+                                    <Progress className= "Linux bar" type="circle" percent={63} format= {()=> 'Linux'}  size={100} strokeColor={twoColors}/>
+                                    <Progress className= "Verilog bar" type="circle" percent={71} format= {()=> 'Verilog'} size={100} strokeColor={twoColors}/>
                                     </ConfigProvider>
                                 </section>
                                 <section className="slide">
