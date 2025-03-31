@@ -1,13 +1,13 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './Dashboard.css';
-import './Components/NavBar/NavBar.css'
-import NavBar from "./Components/NavBar/NavBar";
-import Home from "./Components/Home/Home";
-import Experience from "./Components/Experience/Experience";
-import Contact from "./Components/Contact/Contact";
-import About from "./Components/About/About";
-// import DarkMode from "./Components/DarkMode/DarkMode";
+import './Screens/NavBar/NavBar.css'
+import NavBar from "./Screens/NavBar/NavBar";
+import Home from "./Screens/Home/Home";
+import Experience from "./Screens/Experience/Experience";
+import Contact from "./Screens/Contact/Contact";
+import About from "./Screens/About/About";
+// import DarkMode from "./Screens/DarkMode/DarkMode";
 
 
 function Dashboard() {

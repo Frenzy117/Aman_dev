@@ -10,10 +10,12 @@ import Python from '../../assets/python.svg';
 import Excel from '../../assets/Excel.png';
 import RutgersLogo from '../../assets/Rutgers_logo.png';
 import GLogicLogo from '../../assets/GLogic.jpeg';
+import FindiLogo from '../../assets/FindiLogo.png';
 import appLogo from '../../assets/AppScreen.png';
 import CppLogo from '../../assets/Cpp.png';
 import DartLogo from '../../assets/DartLogo.png';
 import FlutterLogo from '../../assets/FlutterLogo.webp';
+import TypescriptLogo from '../../assets/Typescript.png';
 import Trailer from '../../assets/Trailer.mp4';
 import gitHubLogo from '../../assets/github-mark.svg';
 import PortfolioImg from '../../assets/PortfolioSnip.png';
@@ -28,7 +30,10 @@ import Listening from '../../assets/Listening.png';
 import Glasses from '../../assets/GlassImg.png';
 import KiCad from '../../assets/KiCad.png';
 import Uvicorn from '../../assets/uvicorn.png';
+import Firebase from '../../assets/FirebaseLogo.png';
 import Maps from '../../assets/Maps.png';
+import Figma from '../../assets/Figma.png';
+import trello from '../../assets/trello.svg';
 import { React, useEffect} from 'react';
 
 function Experience ()
@@ -81,6 +86,58 @@ function Experience ()
             </div>
             
             <div className='professional-container'>
+            <div className='accordion'>
+                    <div className='accordion-header'>
+                        <div className="main-head">
+                            <div className="basic">
+                                <h1 className="position">
+                                    Software Engineer
+                                </h1>
+                                <p className="company">
+                                    Findi
+                                </p>
+                                <p className="tenure">
+                                    June 2024
+                                </p>
+                            </div>
+                            <div className="company-logo-div">
+                                <img className="company-logo square-logo" src={FindiLogo} alt='company-logo'/>
+                            </div>
+                        </div>
+                        <div className='tech-stack'>
+                            <Tooltip title="React Native" variant='soft' size="sm">
+                                <img className='tech-logo' src={ReactImg} alt='tech-stack-logo'/>
+                            </Tooltip>
+
+                            <Tooltip title='NodeJS' variant='soft' size="sm">
+                                <img className='tech-logo' src={Node} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            
+                            <Tooltip title='TypeScript' variant='soft' size="sm">
+                                <img className='tech-logo' src={TypescriptLogo} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            <Tooltip title='CSS' variant='soft' size="sm">
+                                <img className='tech-logo' src={CSS} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            <Tooltip title='Firebase' variant='soft' size="sm">
+                                <img className='tech-logo' src={Firebase} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            <Tooltip title='Figma' variant='soft' size="sm">
+                                <img className='tech-logo' src={Figma} alt='tech-stack-logo'/>
+                            </Tooltip>
+                            <Tooltip title='Trello' variant='soft' size="sm">
+                                <img className='tech-logo' src={trello} alt='tech-stack-logo'/>
+                            </Tooltip>
+                        </div>
+                    </div>
+                        <div className='accordion-content'>
+                        <ul className="summary">
+                            <li>Driving the development and implementation of new features for a cross-platform React Native mobile application (iOS & Android) deployed on Firebase, ensuring optimal performance and user experience within an Agile framework.</li>
+                            <li>Managing feature requests and bug fixes using Trello in a Kanban setup, collaborating with design teams via Figma to ensure functionality aligns with user-centric design principles and Agile practices</li>
+                            <li>Translating complex bug reports and error tickets into clear, actionable code, leveraging various React Native libraries to enhance the app's functionality and performance, and contributing to the stability and efficiency of the mobile application.</li>
+                        </ul>
+                    </div>
+                </div>
                 <div className='accordion'>
                     <div className='accordion-header'>
                         <div className="main-head">

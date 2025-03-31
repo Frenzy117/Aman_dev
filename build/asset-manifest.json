@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bc00d89c.css",
-    "main.js": "/static/js/main.ecd3d949.js",
+    "main.js": "/static/js/main.a862e20a.js",
     "static/js/453.d334ee84.chunk.js": "/static/js/453.d334ee84.chunk.js",
     "static/media/Trailer.mp4": "/static/media/Trailer.863305a3f0002b0d0e0d.mp4",
     "static/media/House.png": "/static/media/House.8392d8aa74f5999904a8.png",
@@ -13,34 +13,38 @@
     "static/media/DartLogo.png": "/static/media/DartLogo.73428df4122b7cd06ffb.png",
     "static/media/Numpy.png": "/static/media/Numpy.d44612f79de8c06a0b1a.png",
     "static/media/React.png": "/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Aman-Saxena_03_31_2025.pdf": "/static/media/Aman-Saxena_03_31_2025.be672c75de3373bb3e2a.pdf",
     "static/media/Scikit.png": "/static/media/Scikit.bfb987221ae5f83d782b.png",
-    "static/media/Aman-Saxena_07_01_2024.pdf": "/static/media/Aman-Saxena_07_01_2024.d2666b65b245f39ae54d.pdf",
+    "static/media/Figma.png": "/static/media/Figma.beea96f2f587e17f494f.png",
     "static/media/Udemy.png": "/static/media/Udemy.fc271506aa0d3547ee5d.png",
     "static/media/Cpp.png": "/static/media/Cpp.d8d9a2f879d60721c1ac.png",
     "static/media/Postgre.png": "/static/media/Postgre.eba8cd3a04411be7a155.png",
     "static/media/Maps.png": "/static/media/Maps.37d02eed1dad92076805.png",
     "static/media/GlassImg.png": "/static/media/GlassImg.8c03b8cd982dd98b2aa5.png",
     "static/media/Rutgers_logo.png": "/static/media/Rutgers_logo.8d7ea151c91ae70de891.png",
+    "static/media/Typescript.png": "/static/media/Typescript.52ea0bc40ba11d507e7d.png",
     "static/media/Excel.png": "/static/media/Excel.2971241aa22d32ae670c.png",
     "static/media/HTMLlogo.webp": "/static/media/HTMLlogo.7296a57e7e1593d080fa.webp",
     "static/media/JS.png": "/static/media/JS.53a72c2f1b8894adc207.png",
     "static/media/Node.svg": "/static/media/Node.4d8b9a0c5a604b6b68d3750273f913d6.svg",
     "static/media/CSS.png": "/static/media/CSS.0ca65abfc0c427bc3506.png",
     "static/media/AppScreen.png": "/static/media/AppScreen.cecc6185dff1e159e955.png",
+    "static/media/FindiLogo.png": "/static/media/FindiLogo.8ac4cbac2eb3fab4e033.png",
     "static/media/resLogo.png": "/static/media/resLogo.b763a89070d47d65a5de.png",
     "static/media/FlutterLogo.webp": "/static/media/FlutterLogo.750450892e40d10c706a.webp",
     "static/media/python.svg": "/static/media/python.62e8a4442709e711eb8c89041804c775.svg",
     "static/media/github-mark.svg": "/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/index.html",
+    "static/media/trello.svg": "/static/media/trello.4eaa2d02b5044685d3a4437845d5446b.svg",
     "static/media/Location.svg": "/static/media/Location.83fe2e94b1be8ecf59b0bb1fd6669c51.svg",
     "static/media/iconmonstr-linkedin-3.svg": "/static/media/iconmonstr-linkedin-3.27a3f479ca1bbb0ceef19e395081fb94.svg",
     "static/media/Mail.svg": "/static/media/Mail.a993830408a8604bfac2f7b651d8af0e.svg",
     "main.bc00d89c.css.map": "/static/css/main.bc00d89c.css.map",
-    "main.ecd3d949.js.map": "/static/js/main.ecd3d949.js.map",
+    "main.a862e20a.js.map": "/static/js/main.a862e20a.js.map",
     "453.d334ee84.chunk.js.map": "/static/js/453.d334ee84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc00d89c.css",
-    "static/js/main.ecd3d949.js"
+    "static/js/main.a862e20a.js"
   ]
 }
