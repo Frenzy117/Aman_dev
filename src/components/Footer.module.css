@@ -1,0 +1,31 @@
+.footer {
+  padding: 40px 48px;
+  border-top: 1px solid rgba(245, 240, 235, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--warm-gray);
+  text-transform: uppercase;
+  font-family: var(--mono);
+}
+
+.right {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--warm-gray);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 24px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

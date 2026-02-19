@@ -1,0 +1,66 @@
+.section {
+  padding: 120px 48px;
+  background: rgba(245, 240, 235, 0.02);
+  border-top: 1px solid rgba(245, 240, 235, 0.08);
+}
+
+.sectionLabel {
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sectionLabel::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(245, 240, 235, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: rgba(245, 240, 235, 0.06);
+}
+
+.item {
+  background: var(--black);
+  padding: 36px 32px;
+  transition: background 0.3s;
+}
+
+.item:hover {
+  background: rgba(200, 184, 154, 0.08);
+}
+
+.issuer {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-family: var(--mono);
+}
+
+.name {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 24px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

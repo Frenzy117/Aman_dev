@@ -1,0 +1,36 @@
+.wrapper {
+  border-top: 1px solid rgba(245, 240, 235, 0.08);
+  border-bottom: 1px solid rgba(245, 240, 235, 0.08);
+  overflow: hidden;
+  padding: 18px 0;
+  background: var(--cream);
+}
+
+.track {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.item {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.item::after {
+  content: '//';
+  color: #8a8178;
+  font-size: 14px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

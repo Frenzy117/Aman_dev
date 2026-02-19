@@ -1,0 +1,108 @@
+.section {
+  padding: 120px 48px;
+  border-top: 1px solid rgba(245, 240, 235, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.bgText {
+  position: absolute;
+  bottom: -40px;
+  left: -20px;
+  font-family: var(--serif);
+  font-size: clamp(120px, 18vw, 220px);
+  font-weight: 300;
+  color: rgba(245, 240, 235, 0.02);
+  white-space: nowrap;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-family: var(--serif);
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 300;
+  line-height: 1.0;
+  margin-bottom: 24px;
+}
+
+.heading em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.sub {
+  font-size: 11px;
+  line-height: 2;
+  color: var(--warm-gray);
+  letter-spacing: 0.05em;
+  font-family: var(--mono);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: rgba(245, 240, 235, 0.06);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: var(--black);
+  text-decoration: none;
+  transition: background 0.3s;
+  border-left: 2px solid transparent;
+}
+
+.link:hover {
+  background: rgba(200, 184, 154, 0.06);
+  border-left-color: var(--accent);
+}
+
+.link:hover .linkLabel {
+  color: var(--accent);
+}
+
+.linkLabel {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+  transition: color 0.3s;
+  margin-bottom: 4px;
+  font-family: var(--mono);
+}
+
+.linkVal {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.arrow {
+  color: var(--warm-gray);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 24px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

@@ -1,0 +1,27 @@
+.dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--white);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.ring {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(245, 240, 235, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: width 0.3s ease, height 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+.ring.hovered {
+  width: 60px;
+  height: 60px;
+}

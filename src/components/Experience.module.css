@@ -1,0 +1,123 @@
+.section {
+  padding: 120px 48px;
+  border-top: 1px solid rgba(245, 240, 235, 0.08);
+}
+
+.sectionLabel {
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sectionLabel::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(245, 240, 235, 0.1);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  border-bottom: 1px solid rgba(245, 240, 235, 0.08);
+  padding: 48px 0;
+  gap: 40px;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+}
+
+.item:hover {
+  background: rgba(245, 240, 235, 0.02);
+}
+
+.item:hover::before {
+  transform: scaleY(1);
+}
+
+.period {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--warm-gray);
+  margin-bottom: 8px;
+}
+
+.company {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.role {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.location {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--warm-gray);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bullets li {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--warm-gray);
+  padding-left: 20px;
+  position: relative;
+  letter-spacing: 0.03em;
+}
+
+.bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 24px;
+  }
+  .item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
